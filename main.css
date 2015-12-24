@@ -2,6 +2,10 @@
 	text-align: center;
 }
 
+.header h1{
+	font-size: 50px;
+}
+
 .nav{
 	background-color: rgb(28,94,169);
 	list-style-type: none;
