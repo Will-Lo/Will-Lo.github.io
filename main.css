@@ -1,7 +1,13 @@
+.header{
+	text-align: center;
+}
+
 .nav{
 	background-color: rgb(28,94,169);
+	list-style-type: none;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	text-align: center;
 }
 .nav ul{
 	padding: 0px;
