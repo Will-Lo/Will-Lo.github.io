@@ -11,6 +11,11 @@ body{
 	font-size: 50px;
 }
 
+.shownav{
+	top:20px;
+}
+
+
 .nav{
 	background-color: rgb(28,94,169);
 	padding-top: 5px;
@@ -19,7 +24,19 @@ body{
 	width:100%;
 	list-style-type: none;
 	position:fixed;
+	opacity: 1;
+	/* fade the navigation bar and works with multiple browsers */
+	-webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
+
+.nav.hide{
+	opacity: 0;
+}
+
 .nav ul{
 	padding: 0px;
 }
