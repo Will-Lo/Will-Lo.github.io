@@ -10,96 +10,125 @@
 	<body>
 		<div id="hoverspace">
 			<div class="nav" id="nav"> 
-				<ul><li><a href="index.html">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Robotics</a></li>
+				<ul><li><a href="#header" id = "aboutbtn">About Me</a></li>
+					<li><a href="#projects" id = "projectbtn">Projects</a></li>
+					<li><a href="#robotics" id = "roboticsbtn">Robotics</a></li>
+					<script>
+						$('a[href^="#"').on('click',function(event){
+							var target = $($(this).attr('href'));
+							if(target.length){
+								event.preventDefault();
+								$('html, body').animate({
+									scrollTop: target.offset().top
+								}, 1000);
+							}
+
+						});
+					</script>
+				</ul>
 			</div>
 		</div>
 		<script>
-			$(document).ready(function(){
-				$(function(){
-					$("#nav").addClass("hide");
+			$("#hoverspace").hover(
+				//if the mouse is hovering over the navigation bar's position
+				function(){
+					$("#nav").removeClass("hide");
+				},
+				//else
+				function(){
+					if($(window).scrollTop() > 0){
+						$("#nav").addClass("hide");
+					}	
+				}
+			);
 
-					$(function(){
-						$(window).scroll(function(){
-							//set distance from top of screen before fadeout
-							if ($(this).scrollTop() > 100){
-								$("#nav").addClass("hide");
-							}
-							else{
-								$("#nav").removeClass("hide");
-							}
-						});
+			$(function(){
+				$(function(){
+					$(window).scroll(function(){
+						//set distance from top of screen before fadeout
+						if ($(this).scrollTop() > 100){
+							$("#nav").addClass("hide");
+						}
+						else{
+							$("#nav").removeClass("hide");
+						}
 					});
 				});
-				$("#hoverspace").hover(
-					//if the mouse is hovering over the navigation bar's position
-					function(){
-						$("#nav").removeClass("hide");
-					},
-					//else
-					function(){
-						$("#nav").addClass("hide");
-					}
-
-				);
 			});
 		</script>
 
 		<br></br>
-		<div class="header">
+		<div class="header" id = "header">
 			<h1>William Lo</h1>
 			<h3>Software Engineering Student<h3>
 			</div>
+		<div class = divider></div>
 		<h1>Hi there!</h1> 
 			<p>My name is William Lo and I'm currently studying Software Engineering at the University of Waterloo.</p>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+	<div id = "projects">
+		<h1>Projects</h1>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+	</div>
+	<div id = "robotics">
+		<h1>Robotics<h1>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
 	</body>
 </html>
