@@ -9,6 +9,9 @@ body{
 .header h1{
 	font-size: 50px;
 }
+.hoverspace{
+	width:100%;
+}
 
 .nav{
 	background-color: rgb(28,94,169);
@@ -16,6 +19,7 @@ body{
 	padding-bottom: 5px;
 	top:0;
 	width:100%;
+	max-height: 10%
 	list-style-type: none;
 	position:fixed;
 	opacity: 1;
@@ -55,8 +59,7 @@ body{
 }
 
 .icon{
-	position: relative;
-	left:700px;
+	position:relative;
 }
 
 .divider{
