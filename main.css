@@ -33,6 +33,7 @@ body{
 
 .nav ul{
 	padding: 0px;
+	display: inline-block;
 }
 .nav li {
 	display: inline-block;
@@ -46,21 +47,20 @@ body{
 	padding: 20px;
 }
 
-.nav button{
-	.nav a {
-	color: white;
-	background-color: rgb(28,94,169);
-	font-size: 20px;
-	padding: 20px;
-}
-}
-
-
-.nav a:hover{
+.nav a.link:hover{
 	background-color: rgb(37,122,218);
+}
+.icon:hover{
+	background-color: rgb(37,122,218);
+}
+
+.icon{
+	position: relative;
+	left:700px;
 }
 
 .divider{
 	background-color: rgb(28,94,169);
 	padding:2px;
 }
+
