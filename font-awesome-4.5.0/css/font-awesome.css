@@ -603,7 +603,7 @@
 .fa-trophy:before {
   content: "\f091";
 }
-.fa-github-square:before {
+.fa-gthub-square:before {
   content: "\f092";
 }
 .fa-upload:before {
@@ -631,7 +631,7 @@
 .fa-facebook:before {
   content: "\f09a";
 }
-.fa-github:before {
+.fa-gthub:before {
   content: "\f09b";
 }
 .fa-unlock:before {
@@ -949,7 +949,7 @@
 .fa-reply:before {
   content: "\f112";
 }
-.fa-github-alt:before {
+.fa-gthub-alt:before {
   content: "\f113";
 }
 .fa-folder-o:before {
