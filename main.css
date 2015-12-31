@@ -2,13 +2,23 @@ body{
 	background-color: rgb(242,242,242);
 }
 
+p{
+	font-size: 18px;
+	font-style: none;
+}
+
 .fullWidth {
    width: 100%;
    margin-left: auto;
    margin-right: auto;
-   max-width: initial;
+   max-width: initial !important;
 }
 
+.row {
+  margin: 0 auto;
+  max-width: 75.25rem;
+  width: 100%;
+}
 
 .header{
 	text-align: center;
@@ -84,4 +94,17 @@ body{
 	padding:2px;
 }
 
+.project-item h2{
+	display:inline-block;
+}
+
+
+.project-item{
+	text-align: center;
+	border: 1px solid rgb(28,94,169);
+}
+
+.project-title{
+	text-align: center;
+}
 
