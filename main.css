@@ -15,9 +15,6 @@ p{
 }
 
 .row {
-  margin: 0 auto;
-  max-width: 75.25rem;
-  width: 100%;
 }
 
 .header{
@@ -112,6 +109,14 @@ p{
     -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
+
+.project-content{
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+
 
 .project-item:hover{
 	background-color: rgb(230, 230, 230);
