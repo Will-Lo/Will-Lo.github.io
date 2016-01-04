@@ -116,8 +116,20 @@ p{
 	padding: 10px;
 }
 
-
-
 .project-item:hover{
 	background-color: rgb(230, 230, 230);
+}
+
+.date{
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.robotic-experience h2{
+	padding-left: 200px;
+	display:inline-block;
+}
+
+.video{
+	padding-top: 25px;
 }

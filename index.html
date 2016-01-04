@@ -20,8 +20,8 @@
 						<ul class="links">
 							<li><a class="name">William Lo</a></li>
 							<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
-							<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
 							<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
+							<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
 							<script>
 								$('a[href^="#"').on('click',function(event){
 									var target = $($(this).attr('href'));
@@ -101,10 +101,29 @@
 			<div id = "robotics">
 				<h1>Robotics</h1>
 				<div class="description">
-					<p>I believe robotics deserves its own section since it ignited my interest in programming and engineering. During high school, I learned the how to build, design, and wire robots for FIRST Robotics, and I mainly focused on programming these robots using LabVIEW. Eventually, my skills were developed enough for me to gain an internship position at Quanser, a mechatronics company that designs robotic systems for educational purposes. Currently, I mentor elementary school students who work with lego NXT systems, and I hope to join a design team in the near future. Over the next few years, I plan to expand my knowledge in the field of embedded systems.</p>
+					<p>I believe robotics deserves its own section since it ignited my interest in programming and engineering. During high school, I learned the how to build, design, and wire robots for FIRST Robotics, and I mainly focused on programming these robots using LabVIEW. Eventually, my skills were developed enough for me to gain a summer internship position at Quanser, a mechatronics company that designs robotic systems for educational purposes. Currently, I mentor elementary school students who work with lego NXT systems, and I hope to join a design team in the near future. Over the next few years, I plan to expand my knowledge in the field of embedded systems.</p>
 				</div>
 				<div class="robotic-experience">
-					<h3>FIRST Robotics Competition Team 4001</h3>
+					<h2>FIRST Robotics Competition Team 4001</h2><p class="date"><strong>2012-2015</strong></p>
+					<div class="large-6 columns">
+					<p>As the head programmer and captain for my robotics team, I had 3 goals:</p>
+					<ol>
+						<li>Include and train more students in the software team</li>
+						<li>Develop more sophisticated software for the robot to improve performance</li>
+						<li>Improve communication between sub-teams</li>
+					</ol>
+					<p>To achieve these goals, I started hosting weeking LabVIEW classes after school, integrated modular based programming, which improved the organization and efficiency of the programmers and software, and implemented  PID controllers and autonomous state machines, which drastically improved the quality of the robots we worked on.</p> 
+					</div>
+					<div class="large-6 columns">
+						<div class="video">
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/qVaoCO9U6os" frameborder="3px" allowfullscreen padding></iframe>
+							<p style="text-align: center">A PID controller that realigns the robot's orientation</p>
+						</div>
+					</div>
+				</div>
+				<div class="large-12 columns">
+					<p>During my four years on the team, the team was awarded the Rookie All Stars, Regional Champion, Regional Finalist (x3), Innovation in Control, Creativity, Entrepreneurship, Industrial Design, and Safety Awards.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -121,16 +140,17 @@
 								<i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
 							</span>
 						</div>
-						<div class="project-content" onclick="location.href='foodapi.html';" style="cursor: pointer;">
+						<div class="project-content">
+						<!onclick="location.href='foodapi.html';" style="cursor: pointer;">
 							<p>A mobile application that prompts the user to enter any ingredient or description, and returns relevant recipes based on the user's search query.</p>
 							<p><strong>Tools:</strong> Python, Kivy, BigOven API</p>
 							<a href="https://github.com/Will-Lo/Food-API.git" target="blank">
 								Github Repository
 								<i class="fa fa-gthub"></i>
 							</a>
-							<br></br>
-						</div>							
-					</div>				
+						<br></br>		
+						</div>					
+				</div>				
 				</div>
 				<div class="large-4 columns">
 					<div class="project-item">
