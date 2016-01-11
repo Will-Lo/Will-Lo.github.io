@@ -15,33 +15,28 @@
 	<body>
 		<div id="hoverspace">
 			<div class="nav" id="nav">
-				<div class="row fullWidth">
-					<div class="large-8 columns">
-						<ul class="links">
-							<li><a class="name">William Lo</a></li>
-							<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
-							<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
-							<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
-							<script>
-								$('a[href^="#"').on('click',function(event){
-									var target = $($(this).attr('href'));
-									if(target.length){
-										event.preventDefault();
-										$('html, body').animate({
-											scrollTop: target.offset().top-70
-										}, 1000);
-									}
-								});
-							</script>
-						</ul>
-					</div>
-					<div class="large-2 columns"></div>
-					<div class="large-2 columns">
-						<ul class="icons">
-							<li><a href="https://github.com/Will-Lo" target="_blank" class="icon"><i class="fa fa-gthub fa-lg fa-inverse"></i></a></li>
-							<li><a href="https://ca.linkedin.com/in/williamloca" target="_blank" class="icon"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a></li>
-						</ul>
-					</div>
+				<ul class="links">
+					<li><a class="name">William Lo</a></li>
+					<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
+					<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
+					<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
+					<script>
+						$('a[href^="#"').on('click',function(event){
+							var target = $($(this).attr('href'));
+							if(target.length){
+								event.preventDefault();
+								$('html, body').animate({
+									scrollTop: target.offset().top-70
+								}, 1000);
+							}
+						});
+					</script>
+				</ul>
+				<div class="icon-area">
+					<ul class="icons">
+						<li><a href="https://github.com/Will-Lo" target="_blank" class="icon"><i class="fa fa-gthub fa-lg fa-inverse"></i></a></li>
+						<li><a href="https://ca.linkedin.com/in/williamloca" target="_blank" class="icon"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -82,21 +77,8 @@
 		<div class = divider></div>
 		<div class="row">
 			<h1>Hi there!</h1> 
-				<p></p>
+				<p>I love learning new things. I enjoy the challenge of understanding new concepts and expanding my skill set. As a student, I realized that I don't only learn from my profs and resources, but I also learn a lot from my peers.</p>
 		</div>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
 		<div class ="row">
 			<div id = "robotics">
 				<h1>Robotics</h1>
