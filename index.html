@@ -15,23 +15,25 @@
 	<body>
 		<div id="hoverspace">
 			<div class="nav" id="nav">
-				<ul class="links">
-					<li><a class="name">William Lo</a></li>
-					<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
-					<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
-					<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
-					<script>
-						$('a[href^="#"').on('click',function(event){
-							var target = $($(this).attr('href'));
-							if(target.length){
-								event.preventDefault();
-								$('html, body').animate({
-									scrollTop: target.offset().top-70
-								}, 1000);
-							}
-						});
-					</script>
-				</ul>
+				<div class = "link-area">
+					<ul class="links">
+						<li><a class="name">William Lo</a></li>
+						<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
+						<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
+						<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
+						<script>
+							$('a[href^="#"').on('click',function(event){
+								var target = $($(this).attr('href'));
+								if(target.length){
+									event.preventDefault();
+									$('html, body').animate({
+										scrollTop: target.offset().top-70
+									}, 1000);
+								}
+							});
+						</script>
+					</ul>
+				</div>	
 				<div class="icon-area">
 					<ul class="icons">
 						<li><a href="https://github.com/Will-Lo" target="_blank" class="icon"><i class="fa fa-gthub fa-lg fa-inverse"></i></a></li>
@@ -86,7 +88,9 @@
 					<p>I believe robotics deserves its own section since it ignited my interest in programming and engineering. During high school, I learned the how to build, design, and wire robots for FIRST Robotics, and I mainly focused on programming these robots using LabVIEW. Eventually, my skills were developed enough for me to gain a summer internship position at Quanser, a mechatronics company that designs robotic systems for educational purposes. Currently, I mentor elementary school students who work with lego NXT systems, and I hope to join a design team in the near future. Over the next few years, I plan to expand my knowledge in the field of embedded systems.</p>
 				</div>
 				<div class="robotic-experience">
-					<h2>FIRST Robotics Competition Team 4001</h2><p class="date"><strong>2012-2015</strong></p>
+					<div class="robotic-header">
+						<h2>FIRST Robotics Competition Team 4001</h2><p class="date"><strong>2012-2015</strong></p>
+					</div>
 					<div class="large-6 columns">
 					<p>As the head programmer and captain for my robotics team, I had 3 goals:</p>
 					<ol>

@@ -5,6 +5,12 @@ body{
 p{
 	font-size: 18px;
 	font-style: none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+h1{
+	text-align: center;
 }
 
 .fullWidth {
@@ -29,6 +35,7 @@ p{
 }
 
 .nav{
+	z-index: 100;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -65,18 +72,20 @@ p{
 }
 
 .nav a {
+	text-decoration: none;
 	display: block;
 	color: white;
 	background-color: rgb(28,94,169);
 	font-size: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 }
 
 .nav a.link:hover{
 	background-color: rgb(37,122,218);
+}
+
+.icons{
+	padding: 0px;
 }
 
 .icon-area{
@@ -124,7 +133,6 @@ p{
 }
 
 .project-content{
-	position: relative;
 	margin-bottom: 10px;
 	padding: 10px;
 }
@@ -138,11 +146,41 @@ p{
 	padding-left: 50px;
 }
 
-.robotic-experience h2{
-	padding-left: 200px;
-	display:inline-block;
+.robotic-header{
+	text-align: center;
+}
+
+.robotic-header h2{
+	display: inline-block;
 }
 
 .video{
 	padding-top: 25px;
+}
+
+@media (max-width: 680px) {
+    .icon-area{
+        display: none !important;
+
+    }
+    .name{
+    	display: none !important;
+    }
+
+    .link-area{
+    	display: inline-block;
+    	margin: auto;
+    }
+
+    .nav{
+    	opacity: 1 !important;
+    }
+}
+@media (min-width: 680px) {
+    .icon-area{
+        display:inline-block !important;
+    }
+    .name{
+    	display: inline;
+    }
 }
