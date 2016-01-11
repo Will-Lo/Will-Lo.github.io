@@ -2,13 +2,23 @@ body{
 	background-color: rgb(242,242,242);
 }
 
+h1{
+	font-size: 40px;
+}
+
 p{
 	font-size: 18px;
 	font-style: none;
 }
 
+@media (max-width: 767px) { 
+    .nav{
+        display: none;
+    }
+}
+
+
 .fullWidth {
-   width: 100%;
    margin-left: auto;
    margin-right: auto;
    max-width: initial !important;
@@ -29,6 +39,14 @@ p{
 }
 
 .nav{
+	overflow: hidden;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	flex-direction: row;
 	background-color: rgb(28,94,169);
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -51,10 +69,11 @@ p{
 }
 
 .nav ul{
-	padding: 0px;
 	display: inline-block;
+	padding: 0px;
 }
-.nav li {
+.nav ul li {
+	list-style: none;
 	display: inline-block;
 	padding: 0px;
 }
@@ -69,17 +88,31 @@ p{
 .nav a.link:hover{
 	background-color: rgb(37,122,218);
 }
+.icons{
+	justify-content: flex-end;
+}
+
+.icon-bar{
+	margin-left: auto;
+}
 
 .icon:hover{
 	background-color: rgb(37,122,218);
 }
-
 .links{
 	text-align: left;
+	-webkit-flex: auto;
+	flex: auto;
 }
 .links li{
 	position: relative;
 	display: inline-block;
+}
+
+.link{
+	text-decoration: none;
+	width: 10%; /* fallback for non-calc() browsers */
+    width: calc(60% / 6);
 }
 
 .name{
@@ -97,6 +130,7 @@ p{
 
 .project-item h2{
 	display:inline-block;
+	font-size: 30px;
 }
 
 .project-item{
