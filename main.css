@@ -174,7 +174,7 @@ h1{
     height: 100%;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 680px) and (min-width: 480px){
     .icon-area{
         display: none !important;
 
@@ -197,11 +197,32 @@ h1{
     }
 }
 
-
-
-
-@media (min-width: 680px) {
+@media (min-width: 680px){
     .icon-area{
         display:inline-block !important;
     }
+}
+
+@media (max-width: 480px){
+	.icon-area{
+        display: none !important;
+
+    }
+    .name{
+    	display: none !important;
+    }
+
+    .link-area{
+    	display: inline-block;
+    	margin: auto;
+    }
+
+    .nav{
+    	opacity: 1 !important;
+    }
+
+	.nav a{
+		padding: 10px !important;
+		font-size: 14px;
+	}
 }
