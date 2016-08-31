@@ -1,0 +1,148 @@
+$background-color: #ffffff;
+$primary-color: #263238;
+$secondary-color: #616161;
+$element-text-color: #ffffff;
+$main-text-color: #000000;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+	background-color: $background-color;
+	padding: 0px;
+	margin: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+p {
+	font-size: 18px;
+	font-style: none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	padding-top: 10%;
+	padding-bottom: 5%;
+	margin: 0px;
+	text-align: center;
+	background-color: $primary-color;
+	color: $element-text-color;
+	h1 {
+		margin: 0px;
+        font-size: 4em;
+        @include tablet {
+            font-size: 7em;
+        }
+        @include desktop{
+            font-size: 10em;
+        }
+	}
+	h4 {
+        font-size: 1.5em;
+		margin-top: 5%;
+        @include tablet {
+            font-size: 2.5em;
+        }
+        @include desktop{
+            font-size: 3em;
+        }
+	}
+    .linkBtn {
+        margin-top: 20%;
+        height: 50px;
+        width: 50px;
+        @include tablet {
+            min-height: 60px;
+            min-width: 60px;
+        }
+        @include desktop{
+            min-height: 75px;
+            min-width: 75px;
+        }
+        background-color: $secondary-color;
+        &:hover {
+            background-color: $element-text-color;
+        }
+        i {
+            margin-top: -4px;
+            font-size: 25px;
+            @include tablet {
+                margin-top: 1px;
+                font-size: 35px;
+            }
+            @include desktop{
+                margin-top: 7px;
+                font-size: 45px;
+            }
+            &:hover {
+                color: $main-text-color;
+            }
+        }
+        .fa-github {
+            margin-top: -2px;
+            font-size: 40px;
+            @include tablet {
+                margin-top: 1px;
+                font-size: 50px;
+            }
+             @include desktop{
+                margin-right: 2px;
+                margin-top: 10px;
+                font-size: 60px;
+            }
+        }
+    }
+	.buttons {
+		margin-top: 5%;
+        font-size: 80%;
+	}
+}
+
+.link {
+    color: #1976d2 !important;
+    &:hover {
+        cursor: pointer;
+        color: #bbdefb !important;
+    }
+}
+.cardContent {
+    padding: 10px;
+    height: 130px;
+    p {
+        font-size: 16px;
+    }
+    .card-title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+footer {
+    background-color: $primary-color !important;
+    i {
+        padding-right: 5px;
+    }
+}

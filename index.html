@@ -1,189 +1,187 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style>body {font-family: Ubuntu, sans-serif;}</style>
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'></link>
-		<link href="foundation/css/foundation.css" rel=stylesheet></link>
-		<link href="main.css" rel=stylesheet></link>
-		<link href="font-awesome-4.5.0/css/font-awesome.css" rel=stylesheet></link>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<meta name='description' content='William Lo software enginner' />
+		<meta name='author' content='William Lo' />
+		<meta name='keywords' content='William, Lo, William Lo, software, software engineer, programmer, developer, engineer, robotics, web' />
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='font-awesome/css/font-awesome.min.css' rel='stylesheet'></link>
+		<link href='css/materialize.min.css' rel='stylesheet'/>
+		<link href='css/main.css' rel='stylesheet' />
 		<title> William Lo | Welcome! </title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+		<script src='js/materialize.min.js'></script>
 	</head>
 	
 	<body>
-		<div id="hoverspace">
-			<div class="nav" id="nav">
-				<div class = "link-area">
-					<ul class="links">
-						<li><a class="name">William Lo</a></li>
-						<li><a href="#header" id = "aboutbtn" class="link">About Me</a></li>
-						<li><a href="#robotics" id = "roboticsbtn" class="link">Robotics</a></li>
-						<li><a href="#projects" id = "projectbtn" class="link">Projects</a></li>
-						<script>
-							$('a[href^="#"').on('click',function(event){
-								var target = $($(this).attr('href'));
-								if(target.length){
-									event.preventDefault();
-									$('html, body').animate({
-										scrollTop: target.offset().top-70
-									}, 1000);
-								}
-							});
-						</script>
-					</ul>
-				</div>	
-				<div class="icon-area">
-					<ul class="icons">
-						<li><a href="file-uploads/resume-good.pdf" target="_blank" class="icon"><i class="fa fa-file-text fa-lg fa-inverse"></i></a></li>
-						<li><a href="https://github.com/Will-Lo" target="_blank" class="icon"><i class="fa fa-gthub fa-lg fa-inverse"></i></a></li>
-						<li><a href="https://ca.linkedin.com/in/williamloca" target="_blank" class="icon"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a></li>
-					</ul>
+		<header>
+			<div class='header'>
+				<div class='container'>
+					<div class='row'>
+						<div class='col s12'>
+							<h1>William Lo</h1>
+							<h4>Aspiring Software Engineer</h4>
+						</div>
+						<div class='btnRow row'>
+							<div class='col s4 m2 offset-m3'>
+								<a class='linkBtn waves-effect waves-grey btn-large btn-floating'
+									 href='./file-uploads/resume-good.pdf'
+									 target='_blank'>
+									<i class='fa fa-file-text-o' aria-hidden='true'></i>
+								</a>
+							</div>
+							<div class='col s4 m2'>
+								<a class='linkBtn waves-effect waves-grey btn-large btn-floating'
+									 href='https://github.com/Will-Lo'
+									 target='_blank'>
+									<i class='fa fa-github' aria-hidden='true'></i>
+								</a>
+							</div>
+							<div class='col s4 m2'>
+								<a class='linkBtn waves-effect waves-grey btn-large btn-floating'
+									 href='http://www.linkedin.com/in/williamlo97'
+									 target='_blank'>
+									<i class='fa fa-linkedin' aria-hidden='true'></i>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<script>
-			$("#hoverspace").hover(
-				//if the mouse is hovering over the navigation bar's position
-				function(){
-					$("#nav").removeClass("hide");
-				},
-				//else
-				function(){
-					if($(window).scrollTop() > 0){
-						$("#nav").addClass("hide");
-					}	
-				}
-			);
-
-			$(function(){
-				$(function(){
-					$(window).scroll(function(){
-						//set distance from top of screen before fadeout
-						if ($(this).scrollTop() > 100){
-							$("#nav").addClass("hide");
-						}
-						else{
-							$("#nav").removeClass("hide");
-						}
-					});
-				});
-			});
-		</script>
-
-		<br></br>
-		<div class="header" id = "header">
-			<h1>William Lo</h1>
-			<h3>Software Engineering Student<h3>
-		</div>
-		<div class = divider></div>
-		<div class="row">
-			<h1>Hi there!</h1> 
-				<p>My name's William and I'm currently studying Software Engineering at the University of Waterloo!</p>
-				<p>I love learning new things. Even when I first started programming, I always had the desire to learn new concepts. There's so much to absorb in the world of software; from my classes, my peers, and my coworkers (and the internet!). When I encounter something I don't know, I'll definitely try my best to pick it up and learn from it.</p>
-				<p>I'm currently looking for co-op positions for the summer of 2016. If you're interested, my resume can be found <a href="file-uploads/resume-good.pdf" target="_blank">here!</a></p>
-		</div>
-		<div class ="row">
-			<div id = "robotics">
-				<h1>Robotics</h1>
-				<div class="description">
-					<p>I believe robotics deserves its own section since it ignited my interest in programming and engineering. During high school, I learned how to build, design, and wire robots for FIRST Robotics, and I mainly focused on programming these robots using LabVIEW. Eventually, my skills were developed enough for me to gain a summer internship position at Quanser, a mechatronics company that designs robotic systems for educational purposes. Currently, I mentor elementary school students who work with lego NXT systems, and I hope to join a design team in the near future. Over the next few years, I plan to expand my knowledge in the field of embedded systems.</p>
+		</header>
+		<main>
+			<div class='container'>
+				<div class='section row'>
+					<h2>About me</h2> 
+						<p>
+							I'm William, a student studying Software Engineering at the University of Waterloo. I'm interested in any software related field, whether it be web development, machine learning, or robotics. By broadening my skills in different fields, I hope to gain new perspectives when tackling different projects in the future.
+						</p>
+						<p>
+							In my free time, I enjoy mentoring elementary and highschool students in FIRST robotics, listening to music, and playing Smash (melee).
+						</p>
 				</div>
-				<div class="robotic-experience">
-					<div class="robotic-header">
-						<h2>FIRST Robotics Competition Team 4001</h2><p class="date"><strong>2012-2015</strong></p>
-					</div>
-					<div class="large-6 columns">
-					<p>As the head programmer and captain for my robotics team, I had 2 goals:</p>
-					<ol>
-						<li>Include and train more students in the software team</li>
-						<li>Develop more sophisticated software for the robot to improve performance</li>
-					</ol>
-					<p>To achieve these goals, I started hosting weeking LabVIEW classes after school, integrated modular based programming, which improved the organization and efficiency of the programmers and software, and implemented  PID controllers and autonomous state machines, which drastically improved the quality of the robots we worked on.</p> 
-					</div>
-					<div class="large-6 columns">
-						<div class="video">
-							<div class="video-container">
-								<iframe src="https://www.youtube.com/embed/qVaoCO9U6os" frameborder="0px" width = "560" height = "350" allowfullscreen padding></iframe>
+				<div class='section row'>
+					<h2>Experience</h2>
+					<div class='row'>
+						<div class='card horizontal'>
+							<div class='card-image'>
+								<img src='./images/innovasium.png' />
+							</div>
+							<div class='card-stacked'>
+								<div class='card-content'>
+									<b>Web App Developer at Innovasium Digital</b>
+									<p>AdvanceX</p>
+								</div>
+							</div>
 						</div>
-						<p style="text-align: center">A PID controller that realigns the robot's orientation</p>
 					</div>
 				</div>
-				<div class="large-12 columns">
-					<p>During my four years on the team, the team was awarded the Rookie All Stars, Regional Champion, Regional Finalist (x3), Innovation in Control, Creativity, Entrepreneurship, Industrial Design, and Safety Awards.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-		<div class="row">
-			<div id="projects">
-				<h1>Projects</h1>
-				<div class="large-4 columns">
-					<div class="project-item">
-						<div class="project-title">
-							<h2>FoodFinds</h2>
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
-							</span>
+				<div class='row'>
+					<h2>Portfolio</h2>
+					<div class='row'>
+						<div class='col s12 m6 l4'>
+							<div class='card hoverable'>
+								<div class='card-image waves-effect waves-block waves-light'>
+									<img class='activator' src='./images/coder.png'>
+								</div>
+								<div class='cardContent'>
+	      					<span class='card-title activator grey-text text-darken-4'>Code/r
+	      						<i class='material-icons right'>more_vert</i>
+	      						<p>A web app that interprets written python code</p>
+	      					</span>
+								</div>
+								<div class='card-reveal'>
+									<span class='card-title grey-text text-darken-4'>Code/r
+										<i class='material-icons right'>close</i>
+									</span>
+									<p>
+										Some programmers believe that one of the best ways to practice programming is by writing down code on paper. This web application takes a url of a picture of python code, applies machine learning and image processing, and interprets the code in the browser. It also includes an embedded python text-editor for any modifications.
+									</p>
+									<p>
+										Made during MFST Hacks
+									</p>
+									<p><strong>Tools:</strong> Nodejs, Microsoft Azure API </p>
+								</div>
+								<div class='card-action'>
+									<a class='link' href='https://github.com/Will-Lo/Coder' target='blank'>
+										Github
+									</a>
+									<a class='link' href='http://python-coder.herokuapp.com/' target='blank'>
+										Website
+									</a>
+								</div>
+							</div>
 						</div>
-						<div class="project-content">
-						<!onclick="location.href='foodapi.html';" style="cursor: pointer;">
-							<p>A mobile application that prompts the user to enter any ingredient or description, and returns relevant recipes based on the user's search query.</p>
-							<p><strong>Tools:</strong> Python, Kivy, Edamam API</p>
-							<a href="https://github.com/Will-Lo/Food-API.git" target="blank">
-								Github Repository
-								<i class="fa fa-gthub"></i>
-							</a>
-						<br></br>		
-						</div>					
-				</div>				
-				</div>
-				<div class="large-4 columns">
-					<div class="project-item">
-						<div class="project-title">
-							<h2>Music By Mood</h2>
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-music fa-stack-1x fa-inverse"></i>
-							</span>
+						<div class='col s12 m6 l4'>
+							<div class='card hoverable'>
+								<div class='card-image waves-effect waves-block waves-light'>
+									<img class='activator' src='./images/frc_robot.jpg'>
+								</div>
+								<div class='cardContent'>
+	      					<span class='card-title activator grey-text text-darken-4'>FIRST Robotics
+	      						<i class='material-icons right'>more_vert</i>
+	      						<p>High school robotics lead programmer and captain</p>
+	      					</span>
+								</div>
+								<div class='card-reveal'>
+									<span class='card-title grey-text text-darken-4'>FIRST Robotics
+										<i class='material-icons right'>close</i>
+									</span>
+									<p>Worked with a team to build, wire, and program the robot in 6.5 weeks for 4 years. Although I primarily focused on the programming aspect, I also took part in building, electricals, coaching, and outreach.</p>
+									<p>Won numerous awards with the team including Regional Winners, Regional Finalists, Innovation in Control, Creativity, Entrepreneurship, and Rookie All Stars.</p>
+									<p><strong>Tools:</strong> Labview, Arduino</p>
+								</div>
+								<div class='card-action'>
+									<a class='link' href='https://github.com/frcteam4001' target='blank'>
+										Github
+									</a>
+								</div>
+							</div>
 						</div>
-						<div class="project-content">
-							<p>An application that analyzes a soundtrack that the user uploads using the Echo Nest API. It then sorts the music into pre-determined "moods", which are categorized by tempo, intensity, and more.</p>
-							<p><strong>Tools:</strong> Python, Echo Nest API</p>
-							<a href="https://github.com/Will-Lo/Tech-Retreat-Demo.git" target="blank">
-								Github Repository
-								<i class="fa fa-gthub"></i>
-							</a>
-							<br></br>
-						</div>							
+						<div class='col s12 m6 l4'>
+							<div class='card hoverable'>
+								<div class='card-image waves-effect waves-block waves-light'>
+									<img class='activator' src='./images/food_finder.png'>
+								</div>
+								<div class='cardContent'>
+	      					<span class='card-title activator grey-text text-darken-4'>Food Finds
+	      						<i class='material-icons right'>more_vert</i>
+	      						<p>A mobile app for finding recipes</p>
+	      					</span>
+								</div>
+								<div class='card-reveal'>
+									<span class='card-title grey-text text-darken-4'>Food Finds
+										<i class='material-icons right'>close</i>
+									</span>
+									<p>A mobile application that prompts the user to enter any ingredient or description, and returns relevant recipes based on the user's search query.</p>
+									<p><strong>Tools:</strong> Python, Kivy, Edamam API</p>
+								</div>
+								<div class='card-action'>
+									<a class='link' href='https://github.com/Will-Lo/Food-API.git' target='blank'>
+										Github
+									</a>
+								</div>
+							</div>
+						</div>								
 					</div>				
 				</div>
-				<div class="large-4 columns">
-					<div class="project-item">
-						<div class="project-title">
-							<h2>Twitter Map</h2>
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-							</span>
-						</div>
-						<div class="project-content">
-							<p>A webpage that searches for tweets defined by the user, and displays the location of the tweet on google maps.</p>
-							<p><strong>Tools:</strong> JavaScript, Meteor, Twitter API, Google Maps API</p>
-							<a href="https://github.com/Will-Lo/EngHack.git" target="blank">
-								Github Repository
-								<i class="fa fa-gthub"></i>
-							</a>
-							<br></br>
-						</div>							
-					</div>			
-				</div>
-				</div>
 			</div>
-		</div>
+		</main>
+		<footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contact Me</h5>
+            <ul>
+              <li>
+              	<a class="grey-text text-lighten-3">
+              		<i class='fa fa-envelope-o' aria-hidden='true'></i>
+									william.lo@uwaterloo.ca</a></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
 	</body>
 </html>
