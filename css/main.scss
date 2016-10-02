@@ -1,6 +1,6 @@
 $background-color: #ffffff;
-$primary-color: #263238;
-$secondary-color: #616161;
+$primary-color: #0d47a1;
+$secondary-color: #eceff1;
 $element-text-color: #ffffff;
 $main-text-color: #000000;
 
@@ -44,8 +44,8 @@ a {
 }
 
 .header {
-	padding-top: 10%;
-	padding-bottom: 5%;
+	padding-top: 7%;
+	padding-bottom: 4%;
 	margin: 0px;
 	text-align: center;
 	background-color: $primary-color;
@@ -89,6 +89,7 @@ a {
         i {
             margin-top: -4px;
             font-size: 25px;
+            color: $main-text-color;
             @include tablet {
                 margin-top: 1px;
                 font-size: 35px;
@@ -109,7 +110,6 @@ a {
                 font-size: 50px;
             }
              @include desktop{
-                margin-right: 2px;
                 margin-top: 10px;
                 font-size: 60px;
             }
@@ -140,9 +140,23 @@ a {
     }
 }
 
+.jobTitle {
+    font-size: 20px;
+}
+
 footer {
     background-color: $primary-color !important;
     i {
         padding-right: 5px;
+    }
+}
+
+.sideImage {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: block;
     }
 }

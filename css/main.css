@@ -19,11 +19,11 @@ a {
   text-decoration: none; }
 
 .header {
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding-top: 7%;
+  padding-bottom: 4%;
   margin: 0px;
   text-align: center;
-  background-color: #263238;
+  background-color: #0d47a1;
   color: #ffffff; }
   .header h1 {
     margin: 0px;
@@ -47,7 +47,7 @@ a {
     margin-top: 20%;
     height: 50px;
     width: 50px;
-    background-color: #616161; }
+    background-color: #eceff1; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .header .linkBtn {
         min-height: 60px;
@@ -60,7 +60,8 @@ a {
       background-color: #ffffff; }
     .header .linkBtn i {
       margin-top: -4px;
-      font-size: 25px; }
+      font-size: 25px;
+      color: #000000; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .header .linkBtn i {
           margin-top: 1px;
@@ -80,7 +81,6 @@ a {
           font-size: 50px; } }
       @media (min-width: 1024px) {
         .header .linkBtn .fa-github {
-          margin-right: 2px;
           margin-top: 10px;
           font-size: 60px; } }
   .header .buttons {
@@ -102,9 +102,21 @@ a {
     padding-left: 10px;
     padding-right: 10px; }
 
+.jobTitle {
+  font-size: 20px; }
+
 footer {
-  background-color: #263238 !important; }
+  background-color: #0d47a1 !important; }
   footer i {
     padding-right: 5px; }
+
+.sideImage {
+  display: none; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .sideImage {
+      display: block; } }
+  @media (min-width: 1024px) {
+    .sideImage {
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
