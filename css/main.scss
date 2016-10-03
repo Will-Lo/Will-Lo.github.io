@@ -43,6 +43,16 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+    font-size: 4em;
+    @include tablet {
+        font-size: 7em;
+    }
+    @include desktop{
+        font-size: 10em;
+    }
+}
+
 .header {
 	padding-top: 7%;
 	padding-bottom: 4%;
@@ -50,16 +60,6 @@ a {
 	text-align: center;
 	background-color: $primary-color;
 	color: $element-text-color;
-	h1 {
-		margin: 0px;
-        font-size: 4em;
-        @include tablet {
-            font-size: 7em;
-        }
-        @include desktop{
-            font-size: 10em;
-        }
-	}
 	h4 {
         font-size: 1.5em;
 		margin-top: 5%;

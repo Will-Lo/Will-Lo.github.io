@@ -18,6 +18,15 @@ p {
 a {
   text-decoration: none; }
 
+h1 {
+  font-size: 4em; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 7em; } }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 10em; } }
+
 .header {
   padding-top: 7%;
   padding-bottom: 4%;
@@ -25,15 +34,6 @@ a {
   text-align: center;
   background-color: #003C6E;
   color: #ffffff; }
-  .header h1 {
-    margin: 0px;
-    font-size: 4em; }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .header h1 {
-        font-size: 7em; } }
-    @media (min-width: 1024px) {
-      .header h1 {
-        font-size: 10em; } }
   .header h4 {
     font-size: 1.5em;
     margin-top: 5%; }
