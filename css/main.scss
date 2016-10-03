@@ -1,5 +1,5 @@
 $background-color: #ffffff;
-$primary-color: #0d47a1;
+$primary-color: #00458b;
 $secondary-color: #eceff1;
 $element-text-color: #ffffff;
 $main-text-color: #000000;
@@ -111,6 +111,7 @@ a {
             }
              @include desktop{
                 margin-top: 10px;
+                margin-right: 2px;
                 font-size: 60px;
             }
         }
