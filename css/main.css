@@ -96,7 +96,8 @@ h1 {
 
 .cardContent {
   padding: 10px;
-  height: 130px; }
+  height: 130px;
+  cursor: pointer; }
   .cardContent p {
     font-size: 16px; }
   .cardContent .card-title {
@@ -118,7 +119,11 @@ footer {
       display: block; } }
   @media (min-width: 1024px) {
     .sideImage {
-      display: block; } }
+      display: flex;
+      align-items: center; } }
+  .sideImage .cardImage {
+    height: 200px;
+    width: 200px; }
 
 .profilePic {
   text-align: center; }

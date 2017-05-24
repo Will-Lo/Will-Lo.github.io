@@ -132,6 +132,7 @@ h1 {
 .cardContent {
     padding: 10px;
     height: 130px;
+    cursor: pointer;
     p {
         font-size: 16px;
     }
@@ -158,7 +159,13 @@ footer {
         display: block;
     }
     @include desktop {
-        display: block;
+        display: flex;
+        align-items:center;
+    }
+
+    .cardImage {
+        height: 200px;
+        width: 200px;
     }
 }
 
