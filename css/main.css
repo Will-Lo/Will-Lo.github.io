@@ -2,7 +2,7 @@ main {
   flex: 1 0 auto; }
 
 body {
-  background-color: #ffffff;
+  background-color: #fbfbfb;
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -61,7 +61,7 @@ h1 {
     .header .linkBtn i {
       margin-top: -4px;
       font-size: 25px;
-      color: #000000; }
+      color: #181818; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .header .linkBtn i {
           margin-top: 1px;
@@ -71,7 +71,7 @@ h1 {
           margin-top: 7px;
           font-size: 45px; } }
       .header .linkBtn i:hover {
-        color: #000000; }
+        color: #181818; }
     .header .linkBtn .fa-github {
       margin-top: -2px;
       font-size: 40px; }
