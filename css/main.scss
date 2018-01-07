@@ -1,6 +1,6 @@
 $background-color: #fbfbfb;
 $primary-color: #003C6E;
-$secondary-color: #eceff1;
+$secondary-color: #dadada;
 $element-text-color: #ffffff;
 $main-text-color: #181818;
 
@@ -82,9 +82,9 @@ h1 {
             min-height: 75px;
             min-width: 75px;
         }
-        background-color: $secondary-color;
+        background-color: $element-text-color;
         &:hover {
-            background-color: $element-text-color;
+            background-color: $secondary-color;
         }
         i {
             margin-top: -4px;
@@ -111,7 +111,7 @@ h1 {
             }
              @include desktop{
                 margin-top: 10px;
-                margin-right: 2px;
+                margin-right: 1px;
                 font-size: 60px;
             }
         }
